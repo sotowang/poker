@@ -352,20 +352,6 @@ public class Poker{
         return 0;
     }
 
-
-    /**
-     * 散牌
-     * @param cards
-     * @return
-     */
-    private int highCard(String cards) {
-        if (straightFlush(cards) + fullHouse(cards) + fourOfAKind(cards) + flush(cards)
-                + straight(cards) + threeOfAKind(cards) + twoPairs(cards) + pair(cards) == 0) {
-            return 1;
-        }
-        return 0;
-    }
-
     private static ArrayList<Integer> splitNum(String cards) {
         cards =  cards.replaceAll("T", "10");
         cards =  cards.replaceAll("J", "11");
@@ -390,11 +376,4 @@ public class Poker{
 
         return cardList;
     }
-
-
-
-    public static void main(String[] args) {
-        Poker poker = new Poker();
-    }
-
 }
