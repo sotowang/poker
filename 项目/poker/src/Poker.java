@@ -143,7 +143,7 @@ public class Poker{
                         if (b == 6) {
                             return  "Black wins - " + map.get(String.valueOf(b));
                         }
-                        return"Black wins wins - high card: " + card;
+                        return"Black wins - high card: " + card;
                     } else if (bs.get(i) < ws.get(i)) {
                         String card = ws.get(i) >= 10 ? map.get(String.valueOf(ws.get(i))) : String.valueOf(ws.get(i));
                         if (b == 6) {
